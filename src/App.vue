@@ -6,35 +6,56 @@
         <CarouselMain></CarouselMain>
       </div>
     </div>
-  </div>
-
-  <div class="container text-start">
-    <div class="row border border-1">
-      <div class="col-6 col-md-2 border">
-        text-1
+    <h3 class="mt-3">Popular Products</h3>
+    <div class="row">
+      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
+          <ProductThumbnail
+            title="Handbook Hardcover"
+            price="$100 USD"
+            additionalInfo="New">
+          </ProductThumbnail>
       </div>
-      <div class="col-6 col-md-8 border">
-        text-2
+      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
+          <ProductThumbnail 
+            title="Handbook Hardcover" 
+            price="$100 USD" 
+            additionalInfo="New">
+          </ProductThumbnail>
       </div>
-      <div class="col-12 col-md-2">
-        text-3
+      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
+          <ProductThumbnail 
+            title="Handbook Hardcover" 
+            price="$100 USD" 
+            additionalInfo="New">
+          </ProductThumbnail>
       </div>
-
+      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
+          <ProductThumbnail 
+            title="Handbook Hardcover" 
+            price="$100 USD" 
+            additionalInfo="New">
+          </ProductThumbnail>
+      </div>
     </div>
+  
 
   </div>
+
+
 
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
 import CarouselMain from './components/CarouselMain.vue'
+import ProductThumbnail from './components/ProductThumbnail.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
     CarouselMain,
+    ProductThumbnail,
     
   }
 }
