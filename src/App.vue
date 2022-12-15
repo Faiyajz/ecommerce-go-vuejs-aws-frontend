@@ -49,6 +49,7 @@
 import NavBar from './components/NavBar.vue'
 import CarouselMain from './components/CarouselMain.vue'
 import ProductThumbnail from './components/ProductThumbnail.vue'
+import Webservice from "@/webservice"
 
 export default {
   name: 'App',
@@ -56,7 +57,12 @@ export default {
     NavBar,
     CarouselMain,
     ProductThumbnail,
-    
+  },created(){
+    Webservice.getProducts().then((res)=>{
+      alert(res.data)
+    }).catch((err)=>{
+      alert(err)
+    })
   }
 }
 </script>
