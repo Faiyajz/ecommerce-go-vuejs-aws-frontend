@@ -58,7 +58,14 @@ export default {
     CarouselMain,
     ProductThumbnail,
   },created(){
+    
     Webservice.getProducts().then((res)=>{
+      alert(res.data)
+    }).catch((err)=>{
+      alert(err)
+    }),
+
+    Webservice.getCategories().then((res)=>{
       alert(res.data)
     }).catch((err)=>{
       alert(err)
