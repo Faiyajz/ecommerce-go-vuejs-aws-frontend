@@ -1,6 +1,6 @@
 <template>
     <div class="card" style="width: 12rem;">
-        <img src="@/assets/product.jpg" class="card-img-top" alt="...">
+        <img :src="image" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{ title }}</h5>
             <p class="card-text">{{ price }}</p>
@@ -13,6 +13,7 @@
 export default {
     name: "ProductThumbnail",
     props:{
+        image: String,
         title: String,
         price: String,
         additionalInfo: String,
